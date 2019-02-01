@@ -20,7 +20,11 @@ public class recursion{
      *precondition: n is non-negative
      */
     public static int fib(int n){
-
+        fib(0, 1, n);
+    }
+    private static int fib(int current int next int n){
+        if (n == 0) return current;
+        else return(next, current + next, n - 0);
     }
 
     /*As Per classwork*/
