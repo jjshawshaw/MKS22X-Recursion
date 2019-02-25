@@ -11,6 +11,7 @@ public class recursion{
 
     */
     public static double sqrt(double n, double tolerance){
+      if (n < 0) throw new IllegalArgumentException();
         if (n == 0) return 0;
         return sqrtH(n, 1.0);
     }
@@ -24,6 +25,7 @@ public class recursion{
      *precondition: n is non-negative
      */
     public static int fib(int n){
+      if (n < 0) throw new IllegalArgumentException();
         return fib(0, 1, n);
     }
     private static int fib(int current, int next, int n){
